@@ -1,0 +1,37 @@
+# Visual Studio
+.vs/
+*.vcxproj.user
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+ipch/
+
+# Build output
+Debug/
+Release/
+x64/
+x86/
+Win32/
+build/
+out/
+bin/
+obj/
+
+# Object/binary files
+*.obj
+*.o
+*.exe
+*.dll
+*.lib
+*.pdb
+*.exp
+*.ilk
+
+# Logs
+*.log
+*.tlog
+
+# Package managers
+packages/
+vcpkg_installed/
