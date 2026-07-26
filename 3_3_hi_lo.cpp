@@ -3,7 +3,7 @@
 int main()
 {
     int num{};
-    std::cout << "Enter a nubmer: ";
+    std::cout << "Enter a number: ";
     std::cin >> num;
 
     std::cout << "You entered: " << num << "\n";
