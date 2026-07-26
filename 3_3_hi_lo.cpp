@@ -25,4 +25,6 @@ int main()
     else {
         std::cout << "Congratulations! " << player_1 << " has guessed a number and WON the game!";
     }
+
+    return 0;
 }
