@@ -7,4 +7,9 @@ int main()
     std::cin >> num;
 
     std::cout << "You entered: " << num << "\n";
+
+    std::string player_1{ "Player 1" };
+    std::string player_2{ "Player 2" };
+
+    std::cout << player_1 << " and " << player_2 << " participated in the game." << "\n";
 }
