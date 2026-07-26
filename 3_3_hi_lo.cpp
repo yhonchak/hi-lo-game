@@ -10,4 +10,6 @@ int main()
     std::string player_2{ "Player 2" };
 
     std::cout << player_1 << " and " << player_2 << " participated in the game." << "\n";
+
+    int num1{}, num2{};
 }
