@@ -2,9 +2,9 @@
 
 int main()
 {
-    int num{};
+    int numberToGuess{};
     std::cout << "Enter a number: "; // todo: need to discover how to hide entered number from the users (players)
-    std::cin >> num;
+    std::cin >> numberToGuess;
 
     std::string player_1{ "Player 1" };
     std::string player_2{ "Player 2" };
