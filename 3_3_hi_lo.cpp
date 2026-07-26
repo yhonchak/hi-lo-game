@@ -6,6 +6,8 @@ int main()
     std::cout << "Enter a number: "; // todo: need to discover how to hide entered number from the users (players)
     std::cin >> num;
 
+    std::cout << "You entered: " << num << "\n";
+
     std::string player_1{ "Player 1" };
     std::string player_2{ "Player 2" };
 
