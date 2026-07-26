@@ -1,5 +1,19 @@
 #include <iostream>
 
+bool checkAttempt(std::string player, int playerNum, int guessNum) {
+    if (guessNum > playerNum) {
+        std::cout << "Guessed number is HIGHER than " << playerNum;
+    }
+    else if (guessNum < playerNum) {
+        std::cout << "Guessed number is LOWER than " << playerNum;
+    }
+    else {
+        std::cout << "Congratulations! " << player << " has guessed a number and WON the game!";
+    }
+
+    return false;
+}
+
 int main()
 {
     int numberToGuess{};
@@ -16,15 +30,7 @@ int main()
     std::cout << player_1 << " please enter a number to guess: ";
     std::cin >> num1;
 
-    if (numberToGuess > num1) {
-        std::cout << "Guessed number is HIGHER than " << num1;
-    }
-    else if (numberToGuess < num1) {
-        std::cout << "Guessed number is LOWER than " << num1;
-    }
-    else {
-        std::cout << "Congratulations! " << player_1 << " has guessed a number and WON the game!";
-    }
+    checkAttempt(player_1, num1, numberToGuess);
 
     return 0;
 }
