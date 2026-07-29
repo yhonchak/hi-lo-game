@@ -9,6 +9,7 @@ bool checkAttempt(std::string player, int playerNum, int guessNum) {
     }
     else {
         std::cout << "Congratulations! " << player << " has guessed a number and WON the game!" << "\n";
+        return true;
     }
 
     return false;
