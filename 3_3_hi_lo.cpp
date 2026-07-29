@@ -18,6 +18,14 @@ bool checkAttempt(std::string player, int playerNum, int guessNum) {
     return false;
 }
 
+void game(std::string player1, std::string player2, int guessNum) {
+    int num1{}, num2{};
+
+    checkAttempt(player1, num1, guessNum);
+
+    checkAttempt(player2, num2, guessNum);
+}
+
 int main()
 {
     std::string player_1{ "Player 1" };
@@ -29,11 +37,7 @@ int main()
     std::cout << "Enter a number to be guessed: "; // todo: need to discover how to hide entered number from the users (players)
     std::cin >> numberToGuess;
 
-    int num1{}, num2{};
-
-    checkAttempt(player_1, num1, numberToGuess);
-
-    checkAttempt(player_2, num2, numberToGuess);
+    game(player_1, player_2, numberToGuess);
 
     return 0;
 }
