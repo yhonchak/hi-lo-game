@@ -5,13 +5,13 @@ bool checkAttempt(std::string player, int playerNum, int guessNum) {
     std::cin >> playerNum;
     
     if (guessNum > playerNum) {
-        std::cout << "Guessed number is HIGHER than " << playerNum << "\n";
+        std::cout << "Guessed number is HIGHER than " << playerNum << "\n\n";
     }
     else if (guessNum < playerNum) {
         std::cout << "Guessed number is LOWER than " << playerNum << "\n\n";
     }
     else {
-        std::cout << "Congratulations! " << player << " has guessed a number and WON the game!" << "\n\n";
+        std::cout << "Congratulations! " << player << " has guessed a number and WON the game!" << "\n";
         return true;
     }
 
